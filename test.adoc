@@ -1,0 +1,50 @@
+= Asciidoctor Demo
+Jeremy Gore <jeremy.gore@tessella.com>
+v1.0, 2017-03-22
+:toc:
+:imagesdir: assets/images
+
+This is a test of `asciidoc` code blocks. 
+
+== Code blocks
+
+=== Python
+
+[source,python]
+----
+print("Hello world!") # <1>
+
+def hello(recipient): # <2>
+  print("Hello", recipient)
+----
+<1> Print statement
+<2> Function
+
+[source,python]
+----
+include::test.py[]
+----
+
+=== Ruby
+
+[source,ruby]
+----
+require 'sinatra' // <1>
+
+get '/hi' do // <2>
+  "Hello World!" // <3>
+end
+----
+<1> Library import
+<2> URL mapping
+<3> HTTP response body
+
+=== XML
+
+[source,xml]
+----
+<section>
+  <title>Section Title</title> <!--1-->
+</section>
+----
+<1> The section title is required.
